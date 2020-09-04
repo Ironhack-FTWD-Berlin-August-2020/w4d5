@@ -1,0 +1,12 @@
+<h1>Hello {{ name }}</h1>
+<div>{{{ html }}}</div>
+{{#if todos}}
+<h2>These are the todos 😺</h2>
+<ul>
+    {{#each todos}}
+    <li>{{ this }}</li>
+    {{/each}}
+</ul>
+{{else}}
+<h2>No todos 😕</h2>
+{{/if}}
